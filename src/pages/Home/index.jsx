@@ -1,10 +1,17 @@
-import React from "react";
-import { ContainerHome } from "./styled";
+import { RedesSociais } from "../../components/RedesSociais";
 
-export const Home = () => {
+import { ContainerHome, Title } from "./styled";
+
+export const Home = ({ children }) => {
   return (
     <ContainerHome>
-      <div></div>
+      <RedesSociais />
+      <Title>
+        <h1>Developer</h1>
+        <h2>Lucas Braga</h2>
+        <h3>Front-End Web</h3>
+      </Title>
+      {children}
     </ContainerHome>
   );
 };

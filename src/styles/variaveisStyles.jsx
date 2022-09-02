@@ -7,7 +7,7 @@ const theme = {
     corSecundary: "#999999",
     corText: "#cccccc",
     corDetails: "#b721ff",
-    corDetails2: "#21d4fd",
+    corDetails2: "#0DA6F6",
     corDetails3: "#6a7dfe",
   },
   typeFont: {

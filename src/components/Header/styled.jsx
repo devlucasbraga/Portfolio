@@ -27,7 +27,7 @@ export const ContainerHeader = styled.div`
           color: ${({ theme }) => theme.cors.corPrimary};
           transition: 0.5s;
           &:hover {
-            color: ${({ theme }) => theme.cors.corDetails};
+            color: ${({ theme }) => theme.cors.corDetails2};
           }
         }
       }

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo3.svg";
 
 import { ContainerHeader } from "./styled";
 
