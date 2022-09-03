@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import bg from "./assets/bg.jpg";
 
 // Components
 import { Header } from "./components/Header";
@@ -6,12 +7,11 @@ import { Header } from "./components/Header";
 // Paginas
 import { About } from "./pages/About";
 import { Home } from "./pages/Home";
+import { Projects } from "./pages/Projects";
 
 // Styles Global e variaveis
 import { StyledGlobal } from "./styles/stylesGlobal";
 import { VariaveisStyles } from "./styles/variaveisStyles";
-
-import bg from "./assets/4.jpg";
 
 export const BackgroundImg = styled.main`
   width: 100%;
@@ -30,6 +30,7 @@ function App() {
       <Header />
       <Home />
       <About />
+      <Projects />
     </VariaveisStyles>
   );
 }

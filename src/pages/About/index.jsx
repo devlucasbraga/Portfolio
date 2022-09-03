@@ -1,9 +1,10 @@
 import ProgressLanguages from "../../components/ProgressLanguages";
+
 import { BoxTitle, ContainerAbout } from "./styled";
 
 export const About = () => {
   return (
-    <ContainerAbout>
+    <ContainerAbout id="about">
       <div className="title">
         <h1>Olá, Sou o Lucas</h1>
         <p>
@@ -24,28 +25,15 @@ export const About = () => {
         </p>
 
         <BoxTitle>
-          <ProgressLanguages>
-            <p>90%</p>
-            <div className="b1">
-              <div className="b2"></div>
-            </div>
-          </ProgressLanguages>
-          <span>HTML</span>
-          <p>80%</p>
-          <div className="b1">
-            <div className="b2"></div>
+          <span className="skills">Skills</span>
+          <div className="languages">
+            <ProgressLanguages language="HTML" value="80" />
+            <ProgressLanguages language="CSS3" value="70" />
+            <ProgressLanguages language="JAVASCRIPT" value="50" />
+            <ProgressLanguages language="REACT.JS" value="30" />
+            <ProgressLanguages language="GIT" value="50" />
+            <ProgressLanguages language="NODE JS" value="30" />
           </div>
-          <span>CSS3</span>
-          <p>60%</p>
-          <div className="b1">
-            <div className="b2"></div>
-          </div>
-          <span>JAVASCRIPT</span>
-          <p>30%</p>
-          <div className="b1">
-            <div className="b2"></div>
-          </div>
-          <span>REACT.JS</span>
         </BoxTitle>
       </div>
     </ContainerAbout>

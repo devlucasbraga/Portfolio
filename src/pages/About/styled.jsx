@@ -10,15 +10,18 @@ export const ContainerAbout = styled.section`
     align-items: flex-start;
     justify-content: center;
     padding: 0 60px;
+
     h1 {
       font-family: ${({ theme }) => theme.typeFont.fontSecundary};
       font-size: 2rem;
+      font-weight: 600;
       text-align: left;
       text-transform: uppercase;
       color: ${({ theme }) => theme.cors.corPrimary};
     }
     p {
-      width: 500px;
+      max-width: 800px;
+      font-size: 1.125rem;
       font-weight: 400;
       line-height: 24px;
       color: ${({ theme }) => theme.cors.corText};
@@ -28,30 +31,20 @@ export const ContainerAbout = styled.section`
 `;
 
 export const BoxTitle = styled.div`
-  width: 420px;
-  height: 37vh;
-  margin-top: 20px;
-  padding: 0 10px;
-  box-shadow: 0 0 8px 1px rgba(13, 166, 255, 0.5);
-  border-radius: 20px;
-  span {
+  margin-top: 40px;
+  .skills {
+    font-family: ${({ theme }) => theme.typeFont.fontSecundary};
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
     color: ${({ theme }) => theme.cors.corPrimary};
   }
-  .b1 {
-    width: 400px;
-    height: 8px;
-    background: ${({ theme }) => theme.cors.corText};
-    margin-top: 2px;
-    border-radius: 5px;
-  }
-  .b2 {
-    width: 350px;
-    height: 8px;
-    background: linear-gradient(
-      to left,
-      ${({ theme }) => theme.cors.corDetails},
-      ${({ theme }) => theme.cors.corDetails2}
-    );
-    border-radius: 5px;
+  .languages {
+    width: 500px;
+    height: 37vh;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: relative;
+    /* box-shadow: 0 0 8px 1px rgba(13, 166, 255, 0.5); */
   }
 `;
