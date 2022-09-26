@@ -3,6 +3,7 @@ import bg from "./assets/bg.jpg";
 
 // Components
 import { Header } from "./components/Header";
+import { Slider } from "./components/Slider";
 
 // Paginas
 import { About } from "./pages/About";
@@ -30,7 +31,8 @@ function App() {
       <Header />
       <Home />
       <About />
-      <Projects />
+      {/* <Projects /> */}
+      <Slider />
     </VariaveisStyles>
   );
 }

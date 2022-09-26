@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const NavIcons = styled.nav`
-  width: 10%;
-  height: 80vh;
+  width: 4%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
