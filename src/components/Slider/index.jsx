@@ -11,7 +11,7 @@ export const Slider = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   console.log(activeIndex);
   return (
-    <SliderContainer>
+    <SliderContainer id="projects">
       <SliderContent activeIndex={activeIndex} imageSlider={datasProjects} />
       <Arrows
         prevSlide={() =>
