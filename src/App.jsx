@@ -4,7 +4,6 @@ import { Footer } from "./components/Footer";
 
 // Components
 import { Header } from "./components/Header";
-import { Slider } from "./components/Slider";
 
 // Paginas
 import { About } from "./pages/About";
@@ -33,8 +32,7 @@ function App() {
       <Header />
       <Home />
       <About />
-      {/* <Projects /> */}
-      <Slider />
+      <Projects />
       <Contact />
       <Footer />
     </VariaveisStyles>

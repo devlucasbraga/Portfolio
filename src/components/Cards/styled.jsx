@@ -33,7 +33,7 @@ export const Card = styled.div`
     padding: 10px 20px;
     h1 {
       color: ${({ theme }) => theme.cors.corPrimary};
-      font-size: 5rem;
+      font-size: 2.25rem;
       font-family: ${({ theme }) => theme.typeFont.fontSecundary};
     }
     p {
@@ -41,14 +41,13 @@ export const Card = styled.div`
       font-weight: 400;
       line-height: 24px;
       color: ${({ theme }) => theme.cors.corText};
-
       width: 100%;
-      margin-top: 20px;
+      margin-top: 15px;
       text-align: justify;
     }
     button {
-      margin-top: 10px;
-      margin-bottom: 30px;
+      margin-top: 20px;
+      margin-bottom: 10px;
       padding: 10px 26px;
       border-radius: 20px;
       border: none;
