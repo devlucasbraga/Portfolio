@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerContact = styled.section`
+export const ContainerContact = styled.form`
   width: 90%;
   height: 90vh;
   margin: 0 auto;
@@ -28,7 +28,7 @@ export const ContainerContact = styled.section`
       svg {
         font-size: 2rem;
         margin-top: 15px;
-        color: ${({ theme }) => theme.cors.corDetails2};
+        color: ${({ theme }) => theme.cors.corDetails3};
       }
 
       span {
@@ -52,7 +52,6 @@ export const ContactRight = styled.div`
   input {
     width: 100%;
     padding: 15px 20px;
-    margin-top: 15px;
     margin-bottom: 20px;
     font-size: 1.125rem;
     font-weight: 600;
@@ -61,6 +60,9 @@ export const ContactRight = styled.div`
     border: 3px solid transparent;
     outline: none;
     background: ${({ theme }) => theme.cors.corPrimary};
+    &:nth-last-of-type(2) {
+      margin-top: 20px;
+    }
     &:focus {
       background: linear-gradient(
             ${({ theme }) => theme.cors.corPrimary},
@@ -101,16 +103,4 @@ export const ContactRight = styled.div`
           border-box;
     }
   }
-`;
-
-export const Linha = styled.div`
-  width: 350px;
-  height: 3px;
-  background: linear-gradient(
-    to left,
-    ${({ theme }) => theme.cors.corDetails},
-    ${({ theme }) => theme.cors.corDetails2}
-  );
-  margin-top: 10px;
-  margin-bottom: 10px;
 `;

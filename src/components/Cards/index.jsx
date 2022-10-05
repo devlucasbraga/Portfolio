@@ -1,3 +1,5 @@
+import { ButtonCard } from "../ButtonCard";
+
 import { Card } from "./styled";
 
 export const Cards = (props) => {
@@ -7,7 +9,7 @@ export const Cards = (props) => {
       <div className="info-card">
         <h1>{props.name}</h1>
         <p>{props.description}</p>
-        <button>See code</button>
+        <ButtonCard link={props.link}>see project</ButtonCard>
       </div>
     </Card>
   );

@@ -11,36 +11,42 @@ const datasProjects = [
     title: "Animais Fantasticos",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quos non nulla provident vitae nam temporibus, quo nisi distinctio veritatis explicabo expedita, doloribus assumenda aspernatur veniam quia qui deleniti eum?",
+    url: "https://github.com/devlucasbraga/AnimaisFantasticos",
   },
   {
     image: image2,
     title: "Bikcraft",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quos non nulla provident vitae nam temporibus, quo nisi distinctio veritatis explicabo expedita, doloribus assumenda aspernatur veniam quia qui deleniti eum?",
+    url: "https://github.com/devlucasbraga/segundo_bikcraft",
   },
   {
     image: image3,
     title: "Dogs",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quos non nulla provident vitae nam temporibus, quo nisi distinctio veritatis explicabo expedita, doloribus assumenda aspernatur veniam quia qui deleniti eum?",
+    url: "https://github.com/devlucasbraga/RedesSociais_Dogs",
   },
   {
     image: image4,
     title: "LeScone",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quos non nulla provident vitae nam temporibus, quo nisi distinctio veritatis explicabo expedita, doloribus assumenda aspernatur veniam quia qui deleniti eum?",
+    url: "https://github.com/devlucasbraga/LeScone-restaurante",
   },
   {
     image: image5,
     title: "Relogio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quos non nulla provident vitae nam temporibus, quo nisi distinctio veritatis explicabo expedita, doloribus assumenda aspernatur veniam quia qui deleniti eum?",
+    url: "https://github.com/devlucasbraga/relogio",
   },
   {
     image: image6,
     title: "Slide Animais",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quos non nulla provident vitae nam temporibus, quo nisi distinctio veritatis explicabo expedita, doloribus assumenda aspernatur veniam quia qui deleniti eum?",
+    url: "https://github.com/devlucasbraga/slide",
   },
 ];
 

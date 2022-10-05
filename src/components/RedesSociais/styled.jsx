@@ -20,7 +20,7 @@ export const NavIcons = styled.nav`
           transition: 0.5s ease;
           &:hover {
             width: 1.5rem;
-            fill: ${({ theme }) => theme.cors.corDetails2};
+            fill: ${({ theme }) => theme.cors.corDetails3};
           }
         }
       }

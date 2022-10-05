@@ -26,8 +26,9 @@ export const ContainerHeader = styled.div`
           text-transform: uppercase;
           color: ${({ theme }) => theme.cors.corPrimary};
           transition: 0.5s;
+          position: relative;
           &:hover {
-            color: ${({ theme }) => theme.cors.corDetails2};
+            color: ${({ theme }) => theme.cors.corDetails3};
           }
         }
       }

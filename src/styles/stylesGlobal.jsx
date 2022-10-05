@@ -20,4 +20,16 @@ ul, li {
   list-style: none;
 };
 
+.linha {
+  width: 350px;
+  height: 3px;
+  background: linear-gradient(
+    to left,
+    ${({ theme }) => theme.cors.corDetails},
+    ${({ theme }) => theme.cors.corDetails2}
+  );
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 `;

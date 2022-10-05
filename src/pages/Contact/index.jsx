@@ -1,7 +1,8 @@
-import { ContainerContact, ContactRight, Linha } from "./styled";
+import { ContainerContact, ContactRight } from "./styled";
 
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import { BsTelephone } from "react-icons/bs";
+import { ButtonForm } from "../../components/ButtonForm";
 
 export const Contact = () => {
   return (
@@ -9,7 +10,7 @@ export const Contact = () => {
       <div className="content-contact">
         <div className="contact-left">
           <h1>Contate-me</h1>
-          <Linha></Linha>
+          <div className="linha"></div>
           <HiOutlineMail />
           <span>lucasbraga_a@outlook.com</span>
           <BsTelephone />
@@ -18,11 +19,12 @@ export const Contact = () => {
           <span>Diadema - São Paulo - Brasil</span>
         </div>
         <ContactRight>
-          <h1>Preencha o formulário</h1>
-          <Linha></Linha>
+          <h1>Menssagem</h1>
+          <div className="linha"></div>
           <input type="email" placeholder="E-mail" />
           <input type="text" placeholder="Nome" />
           <textarea placeholder="Deixe sua menssagem"></textarea>
+          <ButtonForm />
         </ContactRight>
       </div>
     </ContainerContact>

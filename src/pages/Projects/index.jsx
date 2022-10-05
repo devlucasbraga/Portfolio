@@ -47,6 +47,7 @@ export const Projects = () => {
               image={item.image}
               name={item.title}
               description={item.description}
+              link={item.url}
             />
           </SwiperSlide>
         ))}

@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  min-width: 30%;
+  width: 100%;
   height: 70%;
-  left: 0;
-  right: 0;
   margin: 150px auto;
   display: flex;
   flex-direction: column;
@@ -12,7 +10,7 @@ export const Card = styled.div`
   justify-content: center;
   border-radius: 10px;
   transition: 0.4s;
-  padding: 1px;
+  padding: 2px;
   background: rgba(13, 166, 246, 0.1);
   box-shadow: 0 1px 4px 1px rgba(13, 166, 246, 0.5),
     inset 0 1px 4px 1px rgba(13, 166, 246, 0.5);
@@ -44,19 +42,6 @@ export const Card = styled.div`
       width: 100%;
       margin-top: 15px;
       text-align: justify;
-    }
-    button {
-      margin-top: 20px;
-      margin-bottom: 10px;
-      padding: 10px 26px;
-      border-radius: 20px;
-      border: none;
-      color: ${({ theme }) => theme.cors.corPrimary};
-      background: ${({ theme }) => theme.cors.corDetails3};
-      font-family: ${({ theme }) => theme.typeFont.fontSecundary};
-      font-weight: 600;
-      text-transform: uppercase;
-      cursor: pointer;
     }
   }
 `;
