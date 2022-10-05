@@ -1,10 +1,51 @@
-import { ContainerContact, ContactRight } from "./styled";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { ButtonForm } from "../../components/ButtonForm";
+
+import { ContainerContact, FormContact } from "./styled";
 
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import { BsTelephone } from "react-icons/bs";
-import { ButtonForm } from "../../components/ButtonForm";
 
 export const Contact = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    if (name === "" || email === "" || message === "") {
+      alert("Preencha todos os campos!");
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+    };
+
+    emailjs
+      .send(
+        "service_jevsb7j",
+        "template_eog9eyj",
+        templateParams,
+        "dIqXMR5e087BecAv8",
+      )
+      .then(
+        (res) => {
+          console.log("EMAIL EVIADO", res.status, res.text);
+          setEmail("");
+          setName("");
+          setMessage("");
+        },
+        (err) => {
+          console.log("ERRO:", err);
+        },
+      );
+  }
+
   return (
     <ContainerContact id="contact">
       <div className="content-contact">
@@ -18,14 +59,28 @@ export const Contact = () => {
           <HiOutlineLocationMarker />
           <span>Diadema - São Paulo - Brasil</span>
         </div>
-        <ContactRight>
+        <FormContact onSubmit={sendEmail}>
           <h1>Menssagem</h1>
           <div className="linha"></div>
-          <input type="email" placeholder="E-mail" />
-          <input type="text" placeholder="Nome" />
-          <textarea placeholder="Deixe sua menssagem"></textarea>
+          <input
+            type="email"
+            placeholder="E-mail"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+          <input
+            type="text"
+            placeholder="Nome"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+          />
+          <textarea
+            placeholder="Deixe sua menssagem"
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
+          ></textarea>
           <ButtonForm />
-        </ContactRight>
+        </FormContact>
       </div>
     </ContainerContact>
   );

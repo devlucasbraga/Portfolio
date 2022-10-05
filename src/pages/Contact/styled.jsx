@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerContact = styled.form`
+export const ContainerContact = styled.div`
   width: 90%;
   height: 90vh;
   margin: 0 auto;
@@ -39,7 +39,7 @@ export const ContainerContact = styled.form`
   }
 `;
 
-export const ContactRight = styled.div`
+export const FormContact = styled.form`
   width: 50%;
   display: flex;
   flex-direction: column;
